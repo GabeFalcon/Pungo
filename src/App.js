@@ -16,7 +16,7 @@ import PunishmentWheel from "./pages/PunishmentWheel.js";
 function App() {
 return ( 
     <AuthProvider>
-      <Router basename="/Pungo"> 
+      <Router> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
