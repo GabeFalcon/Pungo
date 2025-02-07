@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
 import { AuthProvider } from './firebase/AuthContext';
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -13,9 +14,19 @@ import UsernameSelection from "./pages/UsernameSelection";
 import PunishmentWheel from "./pages/PunishmentWheel.js";
 
 function App() {
+
+  const [isExtensionActive, setIsExtensionActive] = useState(false);
+
+  useEffect(() => {
+    // Check if 'h1-check' extension is present by inspecting the user agent
+    if (navigator.userAgent.includes("h1-check")) {
+      setIsExtensionActive(true);
+    }
+  }, []);
+
   return ( 
     <AuthProvider>
-      <Router>
+      <Router basename="/Pungo"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

@@ -75,3 +75,10 @@ html, body {
       padding: 10px;
     }
   }
+
+  @media (max-width: 375px) {
+    .logo {
+          width: 90%;
+          margin-left: 27vw;
+      }
+  }
