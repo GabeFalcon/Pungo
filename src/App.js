@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from './firebase/AuthContext';
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -15,7 +15,7 @@ import PunishmentWheel from "./pages/PunishmentWheel.js";
 function App() {
   return ( 
     <AuthProvider>
-      <Router basename="/Pungo"> {/* Set basename */}
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
