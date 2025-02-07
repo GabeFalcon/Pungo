@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Pungo/static/css/main.61571166.css",
-    "main.js": "/Pungo/static/js/main.0a934d7b.js",
+    "main.js": "/Pungo/static/js/main.be2029cf.js",
     "static/media/logo.png": "/Pungo/static/media/logo.63495995c92506aabb44.png",
     "index.html": "/Pungo/index.html",
     "main.61571166.css.map": "/Pungo/static/css/main.61571166.css.map",
-    "main.0a934d7b.js.map": "/Pungo/static/js/main.0a934d7b.js.map"
+    "main.be2029cf.js.map": "/Pungo/static/js/main.be2029cf.js.map"
   },
   "entrypoints": [
     "static/css/main.61571166.css",
-    "static/js/main.0a934d7b.js"
+    "static/js/main.be2029cf.js"
   ]
 }
