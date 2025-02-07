@@ -1,0 +1,135 @@
+.login-page {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+  }
+  
+  .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+  }
+  
+ .login-page .logo {
+      max-width: 100%;
+      width: 40%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+  
+  .login-page form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background-color: #2d2d2d;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+  }
+  
+  input::placeholder {
+      color: #aaa;
+  }
+  
+.login-page button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background-color: #3508a6;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #390352;
+  }
+  
+  p {
+      color: red;
+      font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-page .logo {
+          width: 60%;
+      }
+  
+      .login-page form {
+          width: 60%;
+          justify-content: center;
+      }
+  
+      button {
+          font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 600px) {
+    .login-page .logo {
+          width: 80%;
+          margin-left: 20vw;
+      }
+      .login-page form {
+        width: 60%;
+        margin-right: 7vw;
+    }
+  
+      .login-page button {
+          font-size: 14px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .login-page .logo {
+          width: 90%;
+          margin-left: 15vw;
+      }
+      .login-page form {
+        width: 60%;
+        margin-right: 10vw;
+    }
+  
+      .login-page button {
+          width: 90%;
+          font-size: 14px;
+          padding: 10px;
+      }
+  }
+  
+  @media (max-width: 350px) {
+    .login-page .logo {
+          width: 90%;
+          margin-left: 15vw;
+      }
+      .login-page form {
+        width: 60%;
+        margin-right: 10vw;
+    }
+  
+      .login-page button {
+          width: 90%;
+          font-size: 14px;
+          padding: 10px;
+      }
+  }

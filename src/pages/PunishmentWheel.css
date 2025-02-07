@@ -1,0 +1,75 @@
+/* General Styles */
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    height: 100vh; /* Ensure it fills the full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.wheel-container h1 {
+    font-size: 4rem; /* Bigger font size */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wheel-container p {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.wheel-container p[style*="color: red"] {
+    color: red;
+}
+
+/* Wheel iframe container */
+.wheel-frame {
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* Occupy 80% of the viewport height */
+    max-width: 1800px;
+    max-height: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px; /* Reduced margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wheel-container h1 {
+        font-size: 3.5rem; /* Adjusted font size for mid-sized screens */
+    }
+
+    .wheel-container p {
+        font-size: 1.8rem; /* Slightly smaller for readability */
+    }
+
+    .wheel-frame {
+        height: 70vh; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .wheel-container {
+        padding: 20px; /* Padding for smaller screens */
+    }
+
+    .wheel-container h1 {
+        font-size: 2.8rem; /* Adjusted font size for smaller screens */
+    }
+
+    .wheel-container p {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .wheel-frame {
+        height: 60vh; /* Slightly smaller height for mobile */
+    }
+}

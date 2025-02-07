@@ -1,0 +1,214 @@
+.create-room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    min-height: 100vh; 
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+  }
+
+  .room-creation .logo {
+    width: 30vw; 
+    max-width: 500px; 
+    height: auto;
+    margin-left: 37vw;
+  }
+  
+ .room-creation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 90vh; 
+    overflow-y: auto; 
+    margin-bottom: 48vh;
+  }
+  
+ .room-creation input, textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .bingo-entry input {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+  }
+  
+ .room-creation input::placeholder, textarea::placeholder {
+    color: #aaa;
+  }
+  
+ .room-creation button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #3508a6;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ .room-creation button:hover {
+    background-color: #390352;
+  }
+  
+ .room-creation .bingo-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .room-creation  .bingo-entry input {
+    flex: 1;
+  }
+  
+  .room-creation .bingo-entry button {
+    margin-left: 10px;
+  }
+  
+  .room-creation h3 {
+    margin-top: 20px;
+  }
+  
+  .room-creation p {
+    color: red;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .room-creation form {
+      width: 90%;
+    }
+    .room-creation input {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+      }
+
+      .room-creation textarea {
+        width: 15vw;
+      }
+    
+      .bingo-entry input {
+        flex: 1; 
+        min-width: 200px; 
+        padding: 10px;
+        font-size: 16px;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+      }
+      .room-creation .logo {
+        width: 30vw; 
+        max-width: 500px; 
+        height: auto;
+        margin-left: 37vw;
+      }
+      
+  }
+  
+  @media (max-width: 606px) {
+    .room-creation form {
+      width: 90%;
+    }
+    .room-creation input {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+      }
+
+      .room-creation textarea {
+        width: 15vw;
+      }
+    
+      .bingo-entry input {
+        flex: 1; 
+        min-width: 200px; 
+        padding: 10px;
+        font-size: 16px;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+      }
+      .room-creation .logo {
+        width: 50vw; 
+        max-width: 500px; 
+        height: auto;
+        margin-left: 27vw;
+        margin-top: 5vh;
+      }
+      
+  }
+  @media (max-width: 360px) {
+    .room-creation form {
+      width: 90%;
+    }
+    .room-creation input {
+        width: 40%;
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+      }
+
+      .room-creation textarea {
+        width: 15vw;
+        padding: 5vw;
+      }
+    
+      .bingo-entry input {
+        flex: 1; 
+        min-width: 150px; 
+        padding: 10px;
+        font-size: 16px;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+      }
+        .room-creation .logo {
+        width: 50vw;
+        max-width: 500px; 
+        height: auto;
+        margin-left: 27vw;
+        margin-top: 5vh;
+      }
+  }

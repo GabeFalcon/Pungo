@@ -1,0 +1,70 @@
+.join-room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+    padding: 20px;
+}
+
+.join-room-container .logo {
+    width: 30vw;
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.join-room-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; 
+}
+
+.join-room-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.join-room-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #3508a6;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-room-container button:hover {
+    background-color: #390352;
+}
+
+.join-room-container p {
+    color: red;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .join-room-container .logo {
+        width: 50vw; 
+    }
+    
+    .join-room-container form {
+        width: 95%;
+    }
+}
